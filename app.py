@@ -25,3 +25,11 @@ def get_fake_data():
                         
         }
     ]
+
+@app.post("/data_push")
+def add_data(data:dict):
+    budget_data.append(data)
+    return{
+        "data_append":"dada added Successfully",
+        "data":data
+    }
