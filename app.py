@@ -26,6 +26,7 @@ def get_fake_data():
         }
     ]
 
+budget_data = []
 @app.post("/data_push")
 def add_data(data:dict):
     budget_data.append(data)
